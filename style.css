@@ -1,0 +1,66 @@
+/* it specifies the animation code created by gradually changing from one set of CSS styles to 
+0% is the beginning of the animation, 100% is when the animation is complete.*/
+@keyframes rainbow {
+  0% {
+    color: #fc0303;
+  }
+  17% {
+    color: #45f52a;
+  }
+  34% {
+    color: #2a7bf5;
+  }
+  51% {
+    color: #2af5e4;
+  }
+  68% {
+    color: #c92af5;
+  }
+  85% {
+    color: #f5dd2a;
+  }
+  100% {
+    color: #66655d;
+  }
+}
+/* I attached the color sequence to a class */
+.rainbow {
+  /* use the rainbow color sequence */
+  animation-name: rainbow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+body {
+  background: base-color;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000000;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.6em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+p {
+  font-size: 1.6em;
+}
+
+button {
+  background: base-color;
+  color: #000000;
+  border: solid 1px #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
